@@ -5,99 +5,30 @@
         <div class="list">
           <div class="list-left">
             <ul>
-              <li>
-                <a href="">title</a>
-              </li>
-              <li>
-                <a href="">item</a>
-              </li>
-              <li>
-                <a href="">item</a>
-              </li>
-              <li>
-                <a href="">item</a>
-              </li>
-              <li>
-                <a href="">item</a>
-              </li>
-              <li>
-                <a href="">item</a>
-              </li>
-              <li>
-                <a href="">item</a>
-              </li>
-              <li>
-                <a href="">item</a>
+              <li>Dc comics</li>
+              <li v-for="(item,index) in listDccomics" :key="index">
+                <a :href="item.url">{{item.name}}</a>
               </li>
             </ul>
             <ul>
-              <li>
-                <a href="">title</a>
-              </li>
-              <li>
-                <a href="">item</a>
-              </li>
-              <li>
-                <a href="">item</a>
+              <li>Shop</li>
+              <li v-for="(item,index) in listShop" :key="index">
+                <a :href="item.url">{{item.name}}</a>
               </li>
             </ul>
           </div>
           
           <ul>
-            <li>
-              <a href="">title</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
+            <li>dc</li>
+            <li v-for="(item,index) in listDc" :key="index">
+              <a :href="item.url">{{item.name}}</a>
             </li>
           </ul>
 
           <ul>
-            <li>
-              <a href="">title</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li><li>
-              <a href="">item</a>
-            </li>
-            <li>
-              <a href="">item</a>
-            </li><li>
-              <a href="">item</a>
+            <li>Sites</li>
+            <li v-for="(item,index) in listSites" :key="index">
+              <a :href="item.url">{{item.name}}</a>
             </li>
           </ul>
         </div>
@@ -107,9 +38,11 @@
     </div>
     <div class="footer-bottom">
       <div class="my-container">
-        <button>sign up now</button>
+        <button>sign-up-now!</button>
         <div class="social">
           <h3>follow us</h3>
+          <img v-for="(item,index) in listSocial" :key="index" :src="item.img" alt="" >
+          <!-- <img src="../../img/footer-facebook.png" alt=""> -->
         </div>
       </div>
     </div>
@@ -117,9 +50,152 @@
 </template>
 
 <script>
+import facebookLogo from "../../img/footer-facebook.png"
+import twitterLogo from "../../img/footer-twitter.png"
+import youtubeLogo from "../../img/footer-youtube.png"
+import pinterestLogo from "../../img/footer-pinterest.png"
+import periscopeLogo from "../../img/footer-periscope.png"
+
 export default {
   name: 'homeFooter',
-  
+  data: function(){
+    return{
+      listDccomics:[
+        {
+          name:"characters",
+          url:"#"
+        },
+        {
+          name:"comics",
+          active:true,
+          url:"#"
+        },
+        {
+          name:"movies",
+          url:"#"
+        },
+        {
+          name:"games",
+          url:"#"
+        },
+        {
+          name:"collectibles",
+          url:"#"
+        },
+        {
+          name:"videos",
+          url:"#"
+        },
+        {
+          name:"fans",
+          url:"#"
+        },
+        {
+          name:"news",
+          url:"#"
+        },
+        {
+          name:"shop",
+          url:"#"
+        }
+      ],
+      listShop:[
+        {
+          name:"Shop Dc",
+          url:"#"
+        },
+        {
+          name:"Shop Dc Colletibles",
+          url:"#"
+        }  
+      ],
+      listDc:[
+        {
+          name: "Term Of Use",
+          url: "#"
+        },
+        {
+          name: "Privacy policy (New)",
+          url: "#"
+        },
+        {
+          name: "Ad Choise",
+          url: "#"
+        },
+        {
+          name: "Advertising",
+          url: "#"
+        },
+        {
+          name: "Jobs",
+          url: "#"
+        },
+        {
+          name: "Subscriptions",
+          url: "#"
+        },
+        {
+          name: "Talent Workshop",
+          url: "#"
+        },
+        {
+          name: "CPSC Certificates",
+          url: "#"
+        },
+        {
+          name: "Ratings",
+          url: "#"
+        },
+        {
+          name: "Shop Help",
+          url: "#"
+        },
+        {
+          name: "Contact Us",
+          url: "#"
+        }
+      ],
+      listSites:[
+        {
+          name: "DC",
+          url: "#"
+        },
+        {
+          name: "MAD Magazine",
+          url: "#"
+        },
+        {
+          name: "DC Kids",
+          url: "#"
+        },
+        {
+          name: "DC Universe",
+          url: "#"
+        },
+        {
+          name: "Dc Power Visa",
+          url: "#"
+        }
+      ],
+      listSocial:[
+        {
+        img:facebookLogo,
+        },
+        {
+          img:twitterLogo,
+        },
+        {
+          img:youtubeLogo,
+        },
+        {
+          img:pinterestLogo,
+        },
+        {
+          img:periscopeLogo,
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -137,6 +213,16 @@ export default {
         display: flex;
         ul{
           margin: 10px;
+          li{
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            a{
+              text-decoration: none;
+              color: rgb(116,119,115);
+              font-size: .7rem;
+            }
+          }
         }
       }
       .footer-logo{
@@ -155,10 +241,30 @@ export default {
       align-items: center;
       button{
         text-transform: uppercase;
-        height: 20px;
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        color: white;
+        border-color: #0d6efd;
       }
       .social{
-        color: blue;
+        color: #0d6efd;
+        display:flex;
+        align-items: center;
+        img{
+          margin-left: 10px;
+        }
       }
     }
   }
