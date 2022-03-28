@@ -1,20 +1,22 @@
 <template>
   <div class="header">
-    <div id="logo-img">
-      <img src="../../img/dc-logo.png" alt="">
+    <div class="my-container">
+      <div id="logo-img">
+        <img src="../../img/dc-logo.png" alt="">
+      </div>
+      <ul>
+        <li><a href="">item</a></li>
+        <li><a href="">item</a></li>
+        <li><a href="">item</a></li>
+        <li><a href="">item</a></li>
+        <li><a href="">item</a></li>
+        <li><a href="">item</a></li>
+        <li><a href="">item</a></li>
+        <li><a href="">item</a></li>
+        <li><a href="">item</a></li>
+        <li><a href="">item</a></li>
+      </ul>
     </div>
-    <ul>
-      <li><a href="">item</a></li>
-      <li><a href="">item</a></li>
-      <li><a href="">item</a></li>
-      <li><a href="">item</a></li>
-      <li><a href="">item</a></li>
-      <li><a href="">item</a></li>
-      <li><a href="">item</a></li>
-      <li><a href="">item</a></li>
-      <li><a href="">item</a></li>
-      <li><a href="">item</a></li>
-    </ul>
   </div>
 </template>
 
@@ -27,7 +29,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  .header{
+  .header .my-container{
     display: flex;
     justify-content:space-between;
     align-items: center;

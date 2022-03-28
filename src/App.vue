@@ -4,7 +4,8 @@
     <main>
       <MainContent />
     </main>
-    <Footer />
+
+      <Footer />
     
   </div>
 </template>
@@ -33,8 +34,10 @@ export default {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   margin: 0 auto;
-  text-align: center;
   color: #2c3e50;
-  width: 75%;
+}
+.my-container{
+    width: 75%;
+    margin: 0 auto;
 }
 </style>
