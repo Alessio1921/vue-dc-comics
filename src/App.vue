@@ -1,17 +1,15 @@
 <template>
   <div id="app">
     <Header />
-    <main>
-      <MainContent />
-    </main>
-
-      <Footer />
-    
+    <Jumbo />
+    <MainContent />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Jumbo from './components/Jumbo.vue'
 import MainContent from './components/MainContent.vue'
 import Footer from './components/Footer.vue'
 
@@ -19,8 +17,9 @@ export default {
   name: 'App',
   components: {
     Header,
+    Jumbo,
     MainContent,
-    Footer
+    Footer,
   }
 }
 </script>

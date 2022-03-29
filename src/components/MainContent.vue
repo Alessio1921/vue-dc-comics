@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import digitalComics from "../../img/buy-comics-digital-comics.png"
-import dcMerchiandise from "../../img/buy-comics-merchandise.png"
-import subscription from "../../img/buy-comics-subscriptions.png"
-import comicShop from "../../img/buy-comics-shop-locator.png"
-import dcVisa from "../../img/buy-dc-power-visa.svg"
+import digitalComics from "../assets/img/buy-comics-digital-comics.png"
+import dcMerchiandise from "../assets/img/buy-comics-merchandise.png"
+import subscription from "../assets/img/buy-comics-subscriptions.png"
+import comicShop from "../assets/img/buy-comics-shop-locator.png"
+import dcVisa from "../assets/img/buy-dc-power-visa.svg"
 
 export default {
   name: 'MainContent',
@@ -31,22 +31,27 @@ export default {
         {
           name:"digital Comics",
           img:digitalComics,
+          url:"#"
         },
         {
           name:"dc Merchiandise",
           img:dcMerchiandise,
+          url:"#"
         },
         {
           name:"subscription",
           img:subscription,
+          url:"#"
         },
         {
           name:"comic Shop Locator",
           img:comicShop,
+          url:"#"
         },
         {
           name:"dc power Visa",
           img:dcVisa,
+          url:"#"
         }
       ]
     }

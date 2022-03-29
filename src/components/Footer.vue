@@ -50,11 +50,11 @@
 </template>
 
 <script>
-import facebookLogo from "../../img/footer-facebook.png"
-import twitterLogo from "../../img/footer-twitter.png"
-import youtubeLogo from "../../img/footer-youtube.png"
-import pinterestLogo from "../../img/footer-pinterest.png"
-import periscopeLogo from "../../img/footer-periscope.png"
+import facebookLogo from "../assets/img/footer-facebook.png"
+import twitterLogo from "../assets/img/footer-twitter.png"
+import youtubeLogo from "../assets/img/footer-youtube.png"
+import pinterestLogo from "../assets/img/footer-pinterest.png"
+import periscopeLogo from "../assets/img/footer-periscope.png"
 
 export default {
   name: 'homeFooter',
@@ -206,7 +206,7 @@ export default {
     justify-content: space-between;
   }
   .footer-top{
-    background-image: url(../../img/footer-bg.jpg);
+    background-image: url(../assets/img/footer-bg.jpg);
     height: 350px;
     .my-container{
       .list{
@@ -226,7 +226,7 @@ export default {
         }
       }
       .footer-logo{
-        background-image: url(../../img/dc-logo-bg.png);
+        background-image: url(../assets/img/dc-logo-bg.png);
         background-position: center;
         background-size: cover;
         height: 350px;
