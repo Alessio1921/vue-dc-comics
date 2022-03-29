@@ -2,6 +2,7 @@
   <div class="content">
     <div class="main-top">
       <div class="my-container">
+        <div class="info">current series</div>
         <div class="container-card">
           <MainContent v-for="(card,index) in mainContList" :key="index" :cardElement="card" />
         </div>
@@ -143,26 +144,35 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  .my-container{
-    
-  }
   .content{
     color: white;
     .main-top{
+      padding-top: 1.5rem;
       background-color: rgb(29,28,28);
-      padding-bottom: 10rem;
+      padding-bottom: 1rem;
       .my-container{
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        .info{
+          position: absolute;
+          bottom: 101%;
+          left: 0;
+          background-color: rgb(56,128,241);
+          padding: 7px;
+          font-size: 1.2rem;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
         .container-card{
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
         }
         button{
-          margin: 0 auto;
+          margin: 2.5rem auto 0;
           border-color: rgb(56,128,241);
           background-color: rgb(56,128,241);
           display: inline-block;
@@ -173,9 +183,8 @@ export default {
           text-decoration: none;
           vertical-align: middle;
           border: 1px solid transparent;
-          padding: 0.375rem 0.75rem;
+          padding: 0.375rem 2.5rem;
           font-size: 1rem;
-          margin-top: 2.5rem;  
         }
       }
     }
