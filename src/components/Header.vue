@@ -72,8 +72,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/scss/style.scss";
   .header .my-container{
-    display: flex;
     justify-content:space-between;
     align-items: center;
     #logo-img{
@@ -89,8 +89,8 @@ export default {
         list-style: none;
         margin: 0 .7rem;
         .active{
-          border-bottom: 4px solid rgb(56,128,241);
-          color: rgb(56,128,241);
+          border-bottom: 4px solid $colorPrimary;
+          color: $colorPrimary;
           padding-bottom:33px ;
         }
         a{
@@ -100,4 +100,5 @@ export default {
       }
     }
   }
+
 </style>

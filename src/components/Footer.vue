@@ -42,7 +42,6 @@
         <div class="social">
           <h3>follow us</h3>
           <img v-for="(item,index) in listSocial" :key="index" :src="item.img" alt="" >
-          <!-- <img src="../../img/footer-facebook.png" alt=""> -->
         </div>
       </div>
     </div>
@@ -201,14 +200,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  .my-container{
-    display: flex;
-    justify-content: space-between;
-  }
+@import "../assets/scss/style.scss";
   .footer-top{
     background-image: url(../assets/img/footer-bg.jpg);
     height: 350px;
     .my-container{
+      justify-content: space-between;
       .list{
         display: flex;
         ul{
@@ -237,6 +234,7 @@ export default {
   .footer-bottom {
     background-color: rgb(48,48,48);
     .my-container{
+      justify-content: space-between;
       height: 80px;
       align-items: center;
       button{
@@ -248,18 +246,15 @@ export default {
         text-decoration: none;
         vertical-align: middle;
         cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
         background-color: transparent;
         border: 1px solid transparent;
         padding: 0.375rem 0.75rem;
         font-size: 1rem;
         color: white;
-        border-color: #0d6efd;
+        border-color: $colorPrimary;
       }
       .social{
-        color: #0d6efd;
+        color: $colorPrimary;
         display:flex;
         align-items: center;
         img{

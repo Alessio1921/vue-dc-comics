@@ -25,18 +25,10 @@ export default {
 </script>
 
 <style lang="scss">
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   margin: 0 auto;
-  color: #2c3e50;
+  overflow: hidden;
 }
-.my-container{
-    width: 75%;
-    margin: 0 auto;
-}
+@import "./assets/scss/style.scss"
 </style>

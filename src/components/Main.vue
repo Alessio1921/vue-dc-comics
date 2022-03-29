@@ -144,6 +144,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/scss/style.scss";
   .content{
     color: white;
     .main-top{
@@ -152,7 +153,6 @@ export default {
       padding-bottom: 1rem;
       .my-container{
         position: relative;
-        display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -160,7 +160,7 @@ export default {
           position: absolute;
           bottom: 101%;
           left: 0;
-          background-color: rgb(56,128,241);
+          background-color: $colorPrimary;
           padding: 7px;
           font-size: 1.2rem;
           font-weight: bold;
@@ -173,8 +173,8 @@ export default {
         }
         button{
           margin: 2.5rem auto 0;
-          border-color: rgb(56,128,241);
-          background-color: rgb(56,128,241);
+          border-color: $colorPrimary;
+          background-color: $colorPrimary;
           display: inline-block;
           font-weight: 400;
           line-height: 1.5;
@@ -189,10 +189,9 @@ export default {
       }
     }
     .main-bottom{
-      background-color: rgb(56,128,241);
+      background-color: $colorPrimary;
       height: 100px;
       .my-container {
-        display: flex;
         height: 100%;
         .item{
           height: 100%;
@@ -210,4 +209,5 @@ export default {
       }
     }
   }
+
 </style>

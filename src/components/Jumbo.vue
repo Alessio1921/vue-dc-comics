@@ -19,4 +19,6 @@ export default {
     background-position-y: top;
     background-size: cover;
   }
+@import "../assets/scss/style.scss"
+
 </style>
